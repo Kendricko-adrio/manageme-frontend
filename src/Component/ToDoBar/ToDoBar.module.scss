@@ -1,0 +1,49 @@
+@import "src/master.module";
+
+.bar{
+  width: 30%;
+  background-color: $fourth-color;
+  max-height: 100%;
+
+  border-radius: 20px;
+  .head{
+    padding: 0 20px 0 20px;
+    background-color: $second-color;
+    border-radius: 20px 20px 0 0 ;
+    height: 80px;
+    color: $primary-text;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content{
+    max-height: 60vh;
+    padding: 20px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      //box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: red;
+      border-radius: 10px;
+    }
+
+
+    &::-webkit-scrollbar-thumb {
+      background: $third-color;
+      border-radius: 10px;
+    }
+  }
+}
+
+.plus{
+  cursor: pointer;
+}

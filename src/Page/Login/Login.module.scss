@@ -1,0 +1,48 @@
+@import "src/master.module";
+
+.login{
+  background-color: $first-color;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-text;
+
+  .box{
+    background-color: $second-color;
+    width: 50%;
+    height: 60%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    form{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      justify-content: space-evenly;
+      input[type="text"]{
+        height: 30px;
+        text-align: center;
+      }
+      input[type="password"]{
+        height: 30px;
+        text-align: center;
+      }
+      input[type="submit"]{
+        height: 30px;
+        text-align: center;
+        width: 30%;
+        align-self: center;
+        background-color: green;
+        color: white;
+        border: none
+      ;
+      }
+    }
+  }
+}

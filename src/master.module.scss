@@ -1,0 +1,30 @@
+$first-color : #14279B;
+$second-color : #3D56B2;
+$third-color : #5C7AEA;
+$fourth-color : #E6E6E6;
+
+$primary-text: white;
+
+@mixin scroll-blue{
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    //box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+
+
+  &::-webkit-scrollbar-thumb {
+    background: $third-color;
+    border-radius: 10px;
+  }
+}

@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Login} from "./Page/Login/Login";
+import {Dashboard} from "./Page/Dashboard/Dashboard";
+import {User} from "./Model/User";
+import {useRecoilState, useRecoilValue, useSetRecoilState} from "recoil";
+import {getCurrentUser} from "./State/UserState";
+import {getLoginUser} from "./Service/UserService";
+
+
+function  App() {
+
+    // const [user, setuser ] = useRecoilState(getCurrentUser)
+    // getUserAuth();
+    console.log("asdasd");
+    // useEffect(() => {
+    //
+    //
+    //     setUser()
+    // })
+
+
+
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Login />}></Route>
+                {/*<Route path="/"    />*/}
+                <Route path="/dashboard/*" element={<Dashboard/>}/>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;

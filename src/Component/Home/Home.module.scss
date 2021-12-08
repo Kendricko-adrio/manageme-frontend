@@ -1,0 +1,22 @@
+@import "src/master.module";
+
+.home{
+  background-color: $third-color;
+  height: 100%;
+  width: 100%;
+  border-radius: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  .head{
+    color: $primary-text;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
