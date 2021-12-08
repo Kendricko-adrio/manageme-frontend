@@ -1,2 +1,2 @@
-export const url: string = "http://localhost:1234";
+export const url: string = "https://manageme123.herokuapp.com";
 
